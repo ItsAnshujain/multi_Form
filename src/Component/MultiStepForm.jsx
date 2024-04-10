@@ -62,7 +62,9 @@ const MultiStepForm = () => {
             <div className="p-1 max-w-lg mx-auto">
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex ${
-                  selectedOption === "Student" ? " border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Student"
+                    ? " border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Student")}
               >
@@ -71,7 +73,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex  ${
-                  selectedOption === "Professional" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Professional"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Professional")}
               >
@@ -80,7 +84,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex  ${
-                  selectedOption === "Parent" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Parent"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Parent")}
               >
@@ -89,7 +95,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex  ${
-                  selectedOption === "Lifelong learner" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Lifelong learner"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Lifelong learner")}
               >
@@ -98,7 +106,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex  ${
-                  selectedOption === "Teacher" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Teacher"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Teacher")}
               >
@@ -107,7 +117,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex  ${
-                  selectedOption === "Other" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Other"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Other")}
               >
@@ -130,7 +142,9 @@ const MultiStepForm = () => {
             <div className="p-1 max-w-lg mx-auto">
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex ${
-                  selectedOption === "Learning" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Learning"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Learning")}
               >
@@ -141,7 +155,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex ${
-                  selectedOption === "Exploring" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Exploring"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Exploring")}
               >
@@ -152,7 +168,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex ${
-                  selectedOption === "Refreshing" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Refreshing"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Refreshing")}
               >
@@ -161,7 +179,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex ${
-                  selectedOption === "Exercising" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Exercising"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Exercising")}
               >
@@ -170,7 +190,9 @@ const MultiStepForm = () => {
               </div>
               <div
                 className={`border border-gray-400 rounded-md  my-5 p-1 cursor-pointer flex ${
-                  selectedOption === "Something else" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
+                  selectedOption === "Something else"
+                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                    : ""
                 }`}
                 onClick={() => handleOptionChange(1, "Something else")}
               >
@@ -183,21 +205,21 @@ const MultiStepForm = () => {
       case 2:
         return (
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-row ">
+            <div className="flex flex-col-reverse lg:flex-row">
               {/* Image */}
               <img
                 src={pic}
                 alt="Brilliant"
                 width="200px"
                 height="400px"
-                className=" m-20"
+                className="m-4 lg:m-20"
               />
               {/* Text */}
-              <div className=" w-2/3 py-28">
-                <h2 className="text-xl font-bold my-4 ">
+              <div className="w-full lg:w-2/3 py-4 lg:py-28">
+                <h2 className="text-xl lg:text-2xl font-bold my-2">
                   You're in the right place
                 </h2>
-                <p>
+                <p className="text-sm lg:text-base">
                   Brilliant gets you hands-on to help improve your professional
                   skills and knowledge. You'll interact with concepts and solve
                   fun problems in math, science, and computer science.
@@ -209,66 +231,83 @@ const MultiStepForm = () => {
       case 3:
         return (
           <>
-            <h2 className="text-xl font-bold mt-8 text-center">
-              What is your math comfort level?
-            </h2>
-            <p className="text-center text-sm my-4">
-              {" "}
-              Choose the highest level you feel confident in - you can always
-              adjust later
-            </p>
-            <div className="flex flex-row p-5 gap-4 mb-5">
-              <div
-                className={`border border-gray-400 rounded-md p-8 h-36 w-80 cursor-pointer ${
-                  selectedOption === "Arithmetic" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
-                }`}
-                onClick={() => handleOptionChange(1, "Arithmetic")}
-              >
-                <p className="text-sm text-center">5 × 1/2 = ?</p>
-                <p className="font-semibold text-sm py-2 text-center">
-                  Arithmetic
-                </p>
-                <p className="text-md opacity-50 text-center">Introductory</p>
-              </div>
-              <div
-                className={`border border-gray-400 rounded-md p-8 h-36 w-80 cursor-pointer ${
-                  selectedOption === " Basic Algebra" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
-                }`}
-                onClick={() => handleOptionChange(1, " Basic Algebra")}
-              >
-                <p className="text-sm text-center">3x + 5 = 4</p>
-                <p className="font-semibold text-sm py-2 text-center">
-                  Basic Algebra
-                </p>
-                <p className="text-md opacity-50 text-center">Foundational</p>
-              </div>
-              <div
-                className={`border border-gray-400 rounded-md p-4 h-36 w-80 cursor-pointer ${
-                  selectedOption === "Intermediate Algebra"
-                    ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
-                    : ""
-                }`}
-                onClick={() => handleOptionChange(1, "Intermediate Algebra")}
-              >
-                <p className="text-sm text-center">
-                  x = (-b ± √ (b2 - 4ac) )/2a
-                </p>
-                <p className="font-semibold text-sm py-2 text-center">
-                  Intermediate Algebra
-                </p>
-                <p className="text-md opacity-50 text-center">Intermediate</p>
-              </div>
-              <div
-                className={`border border-gray-400 rounded-md p-8 h-36 w-80 cursor-pointer ${
-                  selectedOption === "Calculus" ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40" : ""
-                }`}
-                onClick={() => handleOptionChange(1, "Calculus")}
-              >
-                <p className="text-sm text-center">∫x2dx=0</p>
-                <p className="font-semibold text-sm py-2 text-center">
-                  Calculus
-                </p>
-                <p className="text-md opacity-50 text-center">Advanced</p>
+            <div className="max-w-lg mx-auto pb-4">
+              <h2 className="text-xl lg:text-2xl font-bold mt-8 text-center">
+                What is your math comfort level?
+              </h2>
+              <p className="text-center text-sm my-4">
+                Choose the highest level you feel confident in - you can always
+                adjust later
+              </p>
+              <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                <div
+                  className={`border border-gray-400 rounded-md p-4 lg:p-8 h-36 lg:h-auto w-full cursor-pointer ${
+                    selectedOption === "Arithmetic"
+                      ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                      : ""
+                  }`}
+                  onClick={() => handleOptionChange(1, "Arithmetic")}
+                >
+                  <p className="text-sm lg:text-base text-center">
+                    5 × 1/2 = ?
+                  </p>
+                  <p className="font-semibold text-sm lg:text-base py-2 text-center">
+                    Arithmetic
+                  </p>
+                  <p className="text-md lg:text-sm opacity-50 text-center">
+                    Introductory
+                  </p>
+                </div>
+                <div
+                  className={`border border-gray-400 rounded-md p-4 lg:p-8 h-36 lg:h-auto w-full cursor-pointer ${
+                    selectedOption === "Basic Algebra"
+                      ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                      : ""
+                  }`}
+                  onClick={() => handleOptionChange(1, "Basic Algebra")}
+                >
+                  <p className="text-sm lg:text-base text-center">3x + 5 = 4</p>
+                  <p className="font-semibold text-sm lg:text-base py-2 text-center">
+                    Basic Algebra
+                  </p>
+                  <p className="text-md lg:text-sm opacity-50 text-center">
+                    Foundational
+                  </p>
+                </div>
+                <div
+                  className={`border border-gray-400 rounded-md p-4 lg:p-8 h-36 lg:h-auto w-full cursor-pointer ${
+                    selectedOption === "Intermediate Algebra"
+                      ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                      : ""
+                  }`}
+                  onClick={() => handleOptionChange(1, "Intermediate Algebra")}
+                >
+                  <p className="text-sm lg:text-base text-center">
+                    x = (-b ± √ (b2 - 4ac) )/2a
+                  </p>
+                  <p className="font-semibold text-sm lg:text-base py-2 text-center">
+                    Intermediate Algebra
+                  </p>
+                  <p className="text-md lg:text-sm opacity-50 text-center">
+                    Intermediate
+                  </p>
+                </div>
+                <div
+                  className={`border border-gray-400 rounded-md p-4 lg:p-8 h-36 lg:h-auto w-full cursor-pointer ${
+                    selectedOption === "Calculus"
+                      ? "border-yellow-400 hover:shadow-lg border-2 border-opacity-40"
+                      : ""
+                  }`}
+                  onClick={() => handleOptionChange(1, "Calculus")}
+                >
+                  <p className="text-sm lg:text-base text-center">∫x2dx=0</p>
+                  <p className="font-semibold text-sm lg:text-base py-2 text-center">
+                    Calculus
+                  </p>
+                  <p className="text-md lg:text-sm opacity-50 text-center">
+                    Advanced
+                  </p>
+                </div>
               </div>
             </div>
           </>
@@ -276,29 +315,30 @@ const MultiStepForm = () => {
       case 4:
         return (
           <>
-           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-row ">
-              {/* Image */}
-              <img
-                src="https://img.freepik.com/free-vector/corporate-website-abstract-concept-illustration-official-company-website-business-online-representation-corporate-vision-page-web-development-graphic-design-service_335657-354.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1712102400&semt=ais" 
-              
-                className=" h-60 w-72 m-10"
-              />
-              {/* Text */}
-              <div className=" w-2/3 py-12">
-                <h2 className="text-xl font-bold my-4 ">
-                You're on your way!
-                </h2>
-                <p className="text-yellow-400 text-xl">★★★★★</p>
-                <p className= "italic">
-                "Through its engaging and well-structured courses, Brilliant has
-                taught me mathematical concepts that I previously struggled to
-                understand. I now feel confident approaching both technical job
-                interviews and real-world problem-solving situations.""
-                </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="flex flex-col-reverse lg:flex-row pb-5">
+                {/* Text */}
+                <div className="lg:w-2/3 lg:py-12">
+                  <h2 className="text-xl lg:text-2xl font-bold my-4">
+                    You're on your way!
+                  </h2>
+                  <p className="text-yellow-400 text-xl">★★★★★</p>
+                  <p className="italic">
+                    "Through its engaging and well-structured courses, Brilliant
+                    has taught me mathematical concepts that I previously
+                    struggled to understand. I now feel confident approaching
+                    both technical job interviews and real-world problem-solving
+                    situations."
+                  </p>
+                </div>
+                {/* Image */}
+                <img
+                  src="https://img.freepik.com/free-vector/corporate-website-abstract-concept-illustration-official-company-website-business-online-representation-corporate-vision-page-web-development-graphic-design-service_335657-354.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1712102400&semt=ais"
+                  alt="Brilliant"
+                  className="h-60 lg:w-72 lg:m-10 mx-auto"
+                />
               </div>
             </div>
-          </div>
           </>
         );
       default:
@@ -361,5 +401,3 @@ const MultiStepForm = () => {
 };
 
 export default MultiStepForm;
-
-          
